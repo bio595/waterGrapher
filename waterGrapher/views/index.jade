@@ -1,7 +1,20 @@
 extends layout
 
 block content
-	h1 WaterGrapher
-		i.icon-glass
-	p Welcome to #{title}
-	button.btn.btn-primary Click Me
+	script(type="text/javascript", src="javascripts/Chart.js")
+	script(type="text/javascript", src="javascripts/main.js")
+	h1 WaterGrapher 
+		i.icon-bar-chart
+	p An app to track water consumption
+	div.row
+		div#chartContainer
+			canvas#chart(height="300", width="1000")
+	div.row
+		form.form-inline(id="", method="", action="")
+			input#total(type="text", placeholder="Cumulative total")
+			select#timeSelect
+				- for(i = 8; i <= 24; i++){
+				option= i 
+				- }
+			button#addButton.btn.btn-primary Add Data
+

@@ -1,0 +1,8 @@
+#container {
+  background-color: #fff;
+}
+#chartContainer {
+  width: 1000px;
+  height: 300px;
+  margin: 0px auto;
+}

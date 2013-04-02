@@ -1,9 +1,7 @@
 $(function() {
 
-
 	var data = [
-		[[0,0], [1,1]], //Series 1
-		[[0,0], [2,1]] //Series 2
+		[[8,0], [22,5]] //Target Line
 	];
 
 	var options = {
@@ -14,10 +12,13 @@ $(function() {
 		},
 		yaxis: {
 			max: 5
+		},
+		xaxis: {
+			min: 8
 		}
 	};
 
-	$.plot($("#chartContainer"), data, options);
+	var plot = $.plot($("#chartContainer"), data, options);
 
 
 	$("#addButton").click(function (e) {

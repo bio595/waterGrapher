@@ -8,7 +8,11 @@ $(function() {
 	var options = {
 		series: {
 			lines: {
-				fill: true
+				fill: true,
+				show: true
+			},
+			points: {
+				show: true
 			}
 		},
 		yaxis: {
@@ -28,24 +32,22 @@ $(function() {
 		e.preventDefault();
 		console.log("Curent time: " + currentTime + "\nCurrent total: " + currentTotal);
 		//Get inputs
-		var cumulativeTotal = $("#total").val();
-		var time = $("#timeSelect").val();
+		var inputTotal = parseInt($("#total").val(), 10); //val() returns a string
+		var inputTime = parseInt($("#timeSelect").val(), 10);
 		
-		if(time <= currentTime){
-			console.log("BAD TIME\nCurrent time: " + currentTime + "\nCurrent total: " + currentTotal);
+		if(inputTime <= currentTime){
 			$("#badTime").show();
 			return;
 
-		}else if(cumulativeTotal < currentTotal){
-			console.log("BAD TOTAL\nCurrent time: " + currentTime + "\nCurrent total: " + currentTotal);
+		}else if(inputTotal < currentTotal){
 			$("#badTotal").show();
 			return;
 		}
 
-		currentTotal = cumulativeTotal;
-		currentTime = time;
+		currentTotal = inputTotal;
+		currentTime = inputTime;
 
-		var newCoordinate = [time, cumulativeTotal];
+		var newCoordinate = [inputTime, inputTotal];
 		data[1].push(newCoordinate);
 
 		plot.setData(data);

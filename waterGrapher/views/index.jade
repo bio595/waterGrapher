@@ -10,14 +10,14 @@ block content
 	div.row
 		div#chartContainer
 			
-	div.row
-		form.form-inline(id="", method="", action="")
-			input#total(type="text", placeholder="Cumulative total")
-			select#timeSelect
-				- for(i = 8; i <= 22; i++){
-				option= i 
-				- }
-			button#addButton.btn.btn-primary Add Data
+	form.form-inline.row#form
+		input#total(type="text", placeholder="Cumulative total")
+		select.input-small#timeSelect
+			- for(i = 8; i <= 22; i++){
+			option= i 
+			- }
+		button#addButton.btn.btn-primary Add Data
+	
 	div.row
 		div.alert.alert-error#badTime Oh Snap! You can't plot data backwards in time! Leave that to Marty McFly
 			button.close &times;

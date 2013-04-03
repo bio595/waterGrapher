@@ -6,6 +6,16 @@
   height: 300px;
   margin: 0px auto;
 }
+#total {
+  margin-left: 150px;
+}
+#total,
+#timeSelect {
+  margin-right: 7px;
+}
 .alert {
   display: none;
+}
+#form {
+  margin-top: 15px;
 }

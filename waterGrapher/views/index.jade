@@ -1,9 +1,7 @@
 extends layout
 
 block content
-	script(type="text/javascript", src="javascripts/flot/jquery.flot.js")
 	script(type="text/javascript", src="javascripts/utils.js")
-	script(type="text/javascript", src="javascripts/main.js")
 	h1 WaterGrapher 
 		i.icon-bar-chart
 	p An app to track water consumption
@@ -24,3 +22,30 @@ block content
 		div.alert.alert-error#badTotal What?! You can't undrink water and we don't chart yaks!
 			button.close &times;
 
+
+
+	div.row
+		.accordion-group
+			.accordion-heading
+				a.accordion-toggle(data-toggle='collapse', data-parent='#accordion2', href='#collapseOne')
+					| Assignments
+			#collapseOne.accordion-body.collapse.in
+				.accordion-inner
+					table.table.table-striped.table-hover.table-bordered
+						tr
+							th Name
+							th Class
+							th Due Date
+						tr
+							td Web Server Part 1
+							td SOFTENG 325
+							td  Last Year
+						tr
+							td Web Server Part 2
+							td SOFTENG 325
+							td  Last Year
+						tr
+							td Web Server Part 3
+							td SOFTENG 325
+							td  Last Year
+		

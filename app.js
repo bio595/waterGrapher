@@ -36,7 +36,6 @@ app.configure('development', function(){
 
 //Setup our routes
 app.get('/', routes.index); //Used by web browsers, render views
-
 app.post('/login', routes.login); //The login route, sets up server session.
 
 

@@ -1,6 +1,6 @@
 
 //Imports
-var mongo = require('mongodb');
+//var mongo = require('mongodb');
 
 //URI for mongodb
 var mongoUri = process.env.MONGOLAB_URI || 

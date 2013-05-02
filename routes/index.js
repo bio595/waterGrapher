@@ -22,7 +22,7 @@ exports.index = function(req, res){
 
  exports.login = function (req, res) {
  	//TODO: Do check against users in db
- 	req.session.username = req.params.username;
+ 	req.session.username = req.body.username;
  	res.send(200);
  }
 

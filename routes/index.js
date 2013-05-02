@@ -26,6 +26,10 @@ exports.index = function(req, res){
  	res.send(200);
  }
 
+
+exports.checkSession = function (req, res) {
+	res.send(200, req.session.username);
+}
 /*
  * PUBLIC API FROM HERE
  *

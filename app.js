@@ -37,7 +37,7 @@ app.configure('development', function(){
 //Setup our routes
 app.get('/', routes.index); //Used by web browsers, render views
 app.post('/login', routes.login); //The login route, sets up server session.
-
+app.get('/username', routes.checkSession);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));

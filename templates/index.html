@@ -1,12 +1,48 @@
 <!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Water Grapher</title>
-	<link rel="shortcut icon" href=" {{ url_for('static', filename='favicon.ico') }}" />
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
-	<h1>HEYO</h1>
-</body>
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Water Grapher
+        </title>
+
+        <link rel="shortcut icon" href=" {{ url_for('static', filename='favicon.ico') }}" />
+
+        <!-- Skinned Bootstrap, FontAwesome and jQuery -->
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <link href="//netdna.bootstrapcdn.com/bootswatch/2.1.0/cyborg/bootstrap.no-icons.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="row">
+                <h1>Water Grapher <i class="icon-bar-chart"></i></h1>
+            </div>
+            <ul class="nav nav-tabs">
+			  <li class="active"><a href="#home" data-toggle="tab">Today</a></li>
+			  <li><a href="#profile" data-toggle="tab">History</a></li>
+			</ul>
+
+			<div class="tab-content">
+			  <div class="tab-pane active" id="home">FLOT</div>
+			  <div class="tab-pane" id="profile">
+			  	<table class="table table-striped">
+			  		<tr><th>When</th><th>Total Consumption</th> <th>Weight</th> <th>Over/under</th> </tr>
+			  		<tr><td>Yesterday</td><td>Total Consumption</td><td>Over/under</td></tr>
+			  		<tr><td>Yesterday</td><td>Total Consumption</td><td>Over/under</td></tr>
+			  		<tr><td>Yesterday</td><td>Total Consumption</td><td>Over/under</td></tr>
+			  		<tr><td>Yesterday</td><td>Total Consumption</td><td>Over/under</td></tr>
+
+			  	</table>	
+			  </div>
+			</div>
+
+        </div>
+    </body>
+
 </html>

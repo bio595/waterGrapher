@@ -16,6 +16,11 @@
         <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
         <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 
+		<!-- jQuery plugins -->
+		<script src="{{ url_for('static', filename='js/spin.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.spin.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/flot/jquery.flot.min.js') }}"></script>
+
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
     </head>
@@ -32,6 +37,7 @@
 
 			<div class="tab-content">
 			  <div class="tab-pane active" id="home">
+			  	<div id="spinnerContainer"></div>
 			  	<div id="placeholder"></div>
 			  </div>
 			  <div class="tab-pane" id="profile">

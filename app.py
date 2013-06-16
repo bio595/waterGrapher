@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask, render_template
+from flask import Flask, render_template, json
 
 app = Flask(__name__)
 
@@ -11,7 +11,7 @@ def index():
 
 @app.route("/<name>/")
 def name(name):
-	return "Hello " + name
+	return json.dumps([[8,0], [9, 5]])
 
 if __name__ == '__main__':
 	app.run()

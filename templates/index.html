@@ -20,6 +20,7 @@
 		<script src="{{ url_for('static', filename='js/spin.min.js') }}"></script>
 		<script src="{{ url_for('static', filename='js/jquery.spin.js') }}"></script>
 		<script src="{{ url_for('static', filename='js/flot/jquery.flot.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.numeric.js') }}"></script>
 
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
@@ -28,8 +29,7 @@
     <body>
         <div class="container">
             <div class="row">
-                <h1>Water Grapher <i class="icon-bar-chart"></i></h1>
-            </div>
+                <h1>Water Grapher <i class="icon-bar-chart"></i></h1> </div>
             <ul class="nav nav-tabs">
 			  <li class="active"><a href="#home" id="todayTab" data-toggle="tab">Today</a></li>
 			  <li><a href="#profile" data-toggle="tab" id="historyTab">History</a></li>
@@ -39,15 +39,26 @@
 			  <div class="tab-pane active" id="home">
 			  	<div id="spinnerContainer"></div>
 			  	<div id="placeholder"></div>
+			  	<form id="addNewForm" class="form-inline">
+			  		<input type="text" id="amountInput"/> 
+			  		<select id="timeSelector">
+			  			{% for x in range(8, 25) %}
+			  				<option value="{{x}}">{{x}}</option>
+			  			{% endfor %}
+			  		</select>
+			  	<button type="submit" id="addNewButton" class="btn btn-primary">Add</button>
+			  	</form>
+			  	<div id="errorAlert" class="alert alert-error">
+				  <strong>Warning!</strong> Best check yo self, you're not looking too good.
+				</div>		  	
 			  </div>
 			  <div class="tab-pane" id="profile">
 			  	<table class="table table-striped">
 			  		<tr><th>When</th><th>Total Consumption</th> <th>Weight</th> <th>Over/under</th> </tr>
-			  		<tr><td>Yesterday</td><td>Total Consumption</td><td>Over/under</td></tr>
-			  		<tr><td>Yesterday</td><td>Total Consumption</td><td>Over/under</td></tr>
-			  		<tr><td>Yesterday</td><td>Total Consumption</td><td>Over/under</td></tr>
-			  		<tr><td>Yesterday</td><td>Total Consumption</td><td>Over/under</td></tr>
-
+			  		<tr><td>Yesterday</td><td>Total Consumption</td><td>Weight</td><td>Over/under</td></tr>
+			  		<tr><td>Yesterday</td><td>Total Consumption</td><td>Weight</td><td>Over/under</td></tr>
+			  		<tr><td>Yesterday</td><td>Total Consumption</td><td>Weight</td><td>Over/under</td></tr>
+			  		<tr><td>Yesterday</td><td>Total Consumption</td><td>Weight</td><td>Over/under</td></tr>
 			  	</table>	
 			  </div>
 			</div>

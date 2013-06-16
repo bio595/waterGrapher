@@ -1,0 +1,971 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"re",
+				"relative"
+			],
+			[
+				"load",
+				"loadToday"
+			],
+			[
+				"if",
+				"ifmain	if __name__ == '__main__'"
+			],
+			[
+				"de",
+				"department"
+			],
+			[
+				"req",
+				"req"
+			],
+			[
+				"fi",
+				"fiveMinutePeriod"
+			],
+			[
+				"to",
+				"ToInt32"
+			],
+			[
+				"rec",
+				"recordBytes"
+			],
+			[
+				"ro",
+				"row"
+			],
+			[
+				"input",
+				"input-small"
+			],
+			[
+				"inp",
+				"inputTime"
+			],
+			[
+				"c",
+				"cumulativeTotal"
+			],
+			[
+				"cur",
+				"currentTime"
+			],
+			[
+				"t",
+				"time"
+			],
+			[
+				"cu",
+				"cumulativeTotal"
+			],
+			[
+				"sc",
+				"scr	script()"
+			],
+			[
+				"string",
+				"string1"
+			],
+			[
+				"exp",
+				"expected"
+			],
+			[
+				"ex",
+				"expected"
+			],
+			[
+				"ar",
+				"array2"
+			],
+			[
+				"arr",
+				"array1"
+			],
+			[
+				"l",
+				"lerp"
+			],
+			[
+				"f",
+				"f	Anonymous Function"
+			],
+			[
+				"e",
+				"expect"
+			],
+			[
+				"fun",
+				"fun	Function"
+			],
+			[
+				"ch",
+				"chartConfig"
+			],
+			[
+				"da",
+				"data"
+			],
+			[
+				"data",
+				"datasets"
+			],
+			[
+				"fu",
+				"fun	Function"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"for",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"java",
+				"javascripts"
+			],
+			[
+				"st",
+				"stylesheet"
+			],
+			[
+				"bo",
+				"bootstrap"
+			],
+			[
+				"h",
+				"href"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"err",
+				"error_reporting"
+			],
+			[
+				"d",
+				"dCache"
+			],
+			[
+				"m",
+				"multiplicand"
+			],
+			[
+				"mp",
+				"mpz_init"
+			],
+			[
+				"mpz",
+				"mpz_t"
+			],
+			[
+				"i",
+				"inc	#include \"…\""
+			],
+			[
+				"n",
+				"numSundays"
+			],
+			[
+				"day",
+				"dayOfWeek"
+			],
+			[
+				"nod",
+				"nodes"
+			],
+			[
+				"str",
+				"strtok"
+			],
+			[
+				"no",
+				"nodes"
+			],
+			[
+				"max",
+				"maxPath"
+			],
+			[
+				"r",
+				"return"
+			],
+			[
+				"node",
+				"node_t"
+			],
+			[
+				"ma",
+				"maxPath"
+			],
+			[
+				"in",
+				"integer"
+			],
+			[
+				"int",
+				"integer"
+			],
+			[
+				"p",
+				"pathCount"
+			],
+			[
+				"b",
+				"binaryString"
+			],
+			[
+				"col",
+				"collatzSequenceChainLengths"
+			],
+			[
+				"co",
+				"collatzSequenceChainLengths"
+			],
+			[
+				"pr",
+				"probNum"
+			],
+			[
+				"pro",
+				"prob"
+			],
+			[
+				"s",
+				"sum"
+			],
+			[
+				"pri",
+				"primeCount"
+			],
+			[
+				"su",
+				"sumOfSquares"
+			],
+			[
+				"is",
+				"isPalendrome"
+			],
+			[
+				"menu",
+				"menu-1"
+			],
+			[
+				"icon-",
+				"icon-button-search"
+			],
+			[
+				"mw",
+				"min-width"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"text",
+				"textInput"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"radioB",
+				"radioButtonGroup"
+			],
+			[
+				"class",
+				"classList"
+			],
+			[
+				"yui3-radio-group-all-",
+				"yui3-radio-group-all-enabled"
+			],
+			[
+				"checkbutton",
+				"checkboxButtonGroup"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"get",
+				"getButton"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"tra",
+				"transparent"
+			],
+			[
+				"yui3",
+				"yui3-checkbox-group"
+			],
+			[
+				"yu3",
+				"yui3-checkbox-group"
+			],
+			[
+				"yui3-",
+				"yui3-radio-group"
+			],
+			[
+				"But",
+				"ButtonGroup"
+			],
+			[
+				"yui3-button",
+				"yui3-button-close"
+			],
+			[
+				"yui",
+				"yui3-button-disabled"
+			],
+			[
+				"yui3-p",
+				"yui3-primary-button-disabled"
+			],
+			[
+				"try",
+				"try	Try/Except"
+			],
+			[
+				"CO",
+				"Content-Type"
+			],
+			[
+				"html",
+				"htmlString"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"torr",
+				"torrents-list"
+			],
+			[
+				"margi",
+				"margin-left"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"di",
+				"d-ib	display: inline-block;"
+			],
+			[
+				"scri",
+				"scripts"
+			],
+			[
+				"fot",
+				"font-size"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"tim",
+				"times"
+			],
+			[
+				"T",
+				"TIME_BIT_TEMPLATE"
+			],
+			[
+				"time",
+				"timeUnit"
+			],
+			[
+				"hour",
+				"hoursContainer"
+			],
+			[
+				"Co",
+				"CONTAINER_TEMPLATE"
+			],
+			[
+				"cont",
+				"contentBox"
+			],
+			[
+				"con",
+				"contentBox"
+			],
+			[
+				"timeB",
+				"timeBit"
+			],
+			[
+				"C",
+				"CSS_CLASSES"
+			],
+			[
+				"ti",
+				"time-bit"
+			],
+			[
+				"a",
+				"aMethod"
+			],
+			[
+				"read",
+				"readFile"
+			],
+			[
+				"un",
+				"unallowed_regexes"
+			],
+			[
+				"pe",
+				"permissionsFile"
+			],
+			[
+				"Set",
+				"Setup"
+			],
+			[
+				"W",
+				"writeHead"
+			],
+			[
+				"tore",
+				"torrentsQueue"
+			],
+			[
+				"butt",
+				"button1"
+			],
+			[
+				"src",
+				"srcNode"
+			],
+			[
+				"li",
+				"link	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 67.0,
+		"selected_items":
+		[
+			[
+				"jspr",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"html",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"pret",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"pre",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"pretty",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"json",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"prett",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"jso",
+				"Set Syntax: JSON"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"css",
+				"Tidy CSS (Low Compression)"
+			],
+			[
+				"Tidy",
+				"Tidy CSS (Low Compression)"
+			],
+			[
+				"Pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"FileDi",
+				"FileDiffs: Menu"
+			],
+			[
+				"Insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Di",
+				"Set Syntax: Diff"
+			],
+			[
+				"diff",
+				"Set Syntax: Diff"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"In",
+				"Package Control: Install Package"
+			],
+			[
+				"Inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 476.0
+	},
+	"console":
+	{
+		"height": 203.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/michaellittle/Repos/waterGrapher/static/js/main.js",
+		"/Users/michaellittle/Repos/waterGrapher/static/css/style.css",
+		"/Users/michaellittle/Repos/waterGrapher/templates/index.html",
+		"/Users/michaellittle/Repos/waterGrapher/app.py",
+		"/Users/michaellittle/Repos/waterGrapher/static/style.css",
+		"/Users/michaellittle/Repos/waterGrapher/Procfile",
+		"/Users/michaellittle/Repos/waterGrapher/Procfil",
+		"/Users/michaellittle/Repos/se701Assignment4/.gitignore",
+		"/Users/michaellittle/Repos/se701Assignment4_tests/incorrect/block scope.javax",
+		"/Users/michaellittle/Desktop/src/paratask/queues/FifoLifoQueue.java",
+		"/Users/michaellittle/Desktop/Results for \"while\"",
+		"/Users/michaellittle/Repos/vsm-svr/server/vsm.py",
+		"/Users/michaellittle/Desktop/workspace/asdasd/res/layout/activity_main.xml",
+		"/Users/michaellittle/Desktop/working.json",
+		"/Users/michaellittle/Desktop/notworking.json",
+		"/Users/michaellittle/Repos/vsm/.gitignore",
+		"/Users/michaellittle/Repos/vsm-nfc/.gitignore",
+		"/Users/michaellittle/Repos/se701Assignment4_tests/ParserTest.java",
+		"/Users/michaellittle/Repos/se701Assignment4_tests/correct/empty class.javax",
+		"/Users/michaellittle/Repos/se701Assignment4_tests/correct/class with one field.javax",
+		"/Users/michaellittle/Repos/se701Assignment4_tests/correct/call method on object.javax",
+		"/Users/michaellittle/Downloads/src/paratask/runtime/TaskIDGroup.java",
+		"/Users/michaellittle/Dropbox/University/2013/Semester1/SOFTENG701/assignment3/test/correct/nasser.abdl",
+		"/Users/michaellittle/Downloads/CrazyCornerInTheRoom/src/EG1.java",
+		"/Users/michaellittle/Repos/vsm/res/values/strings.xml",
+		"/Users/michaellittle/Repos/vsm/AndroidManifest.xml",
+		"/Users/michaellittle/Repos/waterGrapher/routes/user.js",
+		"/Users/michaellittle/Repos/waterGrapher/waterGrapher/public/javascripts/main.js",
+		"/Users/michaellittle/Desktop/junitTask.html",
+		"/Users/michaellittle/Repos/waterGrapher/waterGrapher/public/javascripts/mainOld.js",
+		"/Users/michaellittle/Repos/waterGrapher/waterGrapher/views/layout.jade",
+		"/Users/michaellittle/Repos/waterGrapher/waterGrapher/views/index.jade",
+		"/Users/michaellittle/Repos/se700p4p/ATTrafficAnalayzer/ATTrafficAnalayzer/RecordFactory.cs",
+		"/Users/michaellittle/robbysshit.c",
+		"/Users/michaellittle/Repos/se750/.gitignore",
+		"/Users/michaellittle/Repos/waterGrapher/waterGrapher/app.js",
+		"/Users/michaellittle/Repos/waterGrapher/waterGrapher/routes/index.js",
+		"/Users/michaellittle/Repos/waterGrapher/waterGrapher/public/stylesheets/style.less",
+		"/Users/michaellittle/Repos/waterGrapher/waterGrapher/routes/user.js",
+		"/Users/michaellittle/Desktop/pokerAnimationSrc/src/nz/ac/auckland/cs/poker/PokerActivity.java",
+		"/Users/michaellittle/Desktop/pokerAnimationSrc/src/nz/ac/auckland/cs/animations/FlopAnimation.java",
+		"/Users/michaellittle/Repos/waterGrapher/waterGrapher/test/testUtils.js",
+		"/Users/michaellittle/.zshrc",
+		"/Users/michaellittle/Repos/UniPlanner/uniPlanner/public/css/style.css",
+		"/Users/michaellittle/Repos/waterGrapher/.gitignore",
+		"/Users/michaellittle/robbyshit.c",
+		"/Volumes/NO NAME/MANWST_20130312.txt",
+		"/Users/michaellittle/Downloads/zsh-5.0-1.2/INSTALL",
+		"/Users/michaellittle/tmp/robbysshit",
+		"/Users/michaellittle/Repos/nbackapp/.git/config",
+		"/Users/michaellittle/Repos/se700p4p/sampleDataFiles/displayVS.py",
+		"/Users/michaellittle/node.js/server.js",
+		"/Users/michaellittle/node.js/simpleServer.js",
+		"/Users/michaellittle/Repos/nbackapp/.gitignore",
+		"/Applications/MAMP/bin/php/php5.4.4/conf/php.ini",
+		"/Users/michaellittle/tmp/test.php",
+		"/Users/michaellittle/Repos/Heroku/symfonySpike/.htaccess",
+		"/Users/michaellittle/Repos/symfonySpike/.gitignore",
+		"/Library/WebServer/Documents/index.html",
+		"/Users/michaellittle/Dropbox/Programming/Project Euler/prob19.c",
+		"/Users/michaellittle/Hactivate/Hack+Tell/map.txt",
+		"/Users/michaellittle/Hactivate/Hack+Tell/map",
+		"/Users/michaellittle/Dropbox/Programming/Project Euler/make.py",
+		"/Users/michaellittle/Dropbox/Programming/Project Euler/prob14.c",
+		"/Users/michaellittle/Dropbox/Programming/Project Euler/prob13.c",
+		"/Users/michaellittle/Dropbox/Programming/Project Euler/prob12.c",
+		"/Users/michaellittle/Dropbox/Programming/Project/Project/Project Euler/prob4.c",
+		"/Users/michaellittle/Dropbox/Programming/Project/Project/Project Euler/prob5.c",
+		"/Users/michaellittle/Dropbox/Programming/Project/Project/Project Euler/prob6.c",
+		"/Users/michaellittle/Dropbox/Programming/Project/Project/Project Euler/prob7.c",
+		"/Users/michaellittle/Dropbox/Programming/Project/Project/Project Euler/prob8.c",
+		"/Users/michaellittle/Dropbox/Programming/Project/Project/Project Euler/prob9.c",
+		"/Users/michaellittle/Dropbox/Programming/Project/Project/Project Euler/prob3.c",
+		"/Users/michaellittle/Dropbox/Programming/Project/Project/Project Euler/prob10.c",
+		"/Users/michaellittle/Dropbox/Programming/Project/Project/Project Euler/prob11.c",
+		"/Users/michaellittle/Dropbox/Programming/Project Euler/prob11.c",
+		"/Users/michaellittle/Dropbox/Programming/Project Euler/prob12",
+		"/Users/michaellittle/Dropbox/Programming/Project/Project/Project Euler/segfault.c",
+		"/Users/michaellittle/Orion/Orion Health Platform/bin/launch.bat",
+		"/Users/michaellittle/spikes/yui3-dial/index.html",
+		"/Users/michaellittle/Repos/YUI3/com.yahoo.yui3/web/dial/assets/skins/sam/dial.css",
+		"/Users/michaellittle/Repos/OHPWebTest/com.orchestral.commonweb.test.web/web/lightbox/index.jsp",
+		"/Users/michaellittle/Repos/yui3-skin-hive/com.orchestral.commonweb/src/main/web/lightbox/assets/_core.scss",
+		"/Users/michaellittle/Repos/yui3-skin-hive/com.orchestral.commonweb/src/main/web/lightbox/assets/skins/hive/_skin.scss",
+		"/Users/michaellittle/yui/yui3-master/src/button/css/cssbutton.css",
+		"/Users/michaellittle/Repos/yui3-skin-hive/com.orchestral.commonweb/src/main/web/button/assets/skins/hive/_skin.scss",
+		"/Users/michaellittle/Repos/OHPWebTest/com.orchestral.commonweb.test.web/web/button/hive.jsp",
+		"/Users/michaellittle/Repos/UniPlanner/uniPlanner/app.js",
+		"/Users/michaellittle/Repos/UniPlanner/fontAwesome/css/font-awesome.min.css",
+		"/Users/michaellittle/Library/Application Support/Sublime Text 2/fontAwesome/css/font-awesome.min.css",
+		"/Users/michaellittle/Repos/yui3-skin-hive/com.orchestral.commonweb/src/main/web/assets/skins/hive/_base.scss",
+		"/Users/michaellittle/yui/yui3-master/panel.html",
+		"/Users/michaellittle/yui/hive-skin/panel/_lightbox-skin.scss",
+		"/Users/michaellittle/spikes/compassSpikes/parentSelectorSpike.scss",
+		"/Users/michaellittle/yui/hive-skin/button/css/_button-skin.scss",
+		"/Users/michaellittle/yui/hive-skin/hive/_base.scss",
+		"/Users/michaellittle/yui/fghjk.css",
+		"/Users/michaellittle/spikes/express-hello-world/main.js",
+		"/Users/michaellittle/htdocs/iconLibrary/index.html",
+		"/Users/michaellittle/Repos/MyWebsite/.unallowed",
+		"/Users/michaellittle/yui/yui3-master/src/button/build.json",
+		"/Users/michaellittle/yui/yui3-master/src/yui/js/yui.js",
+		"/Users/michaellittle/yui/build_folder/loader-yui3/loader-yui3",
+		"/Users/michaellittle/yui/build_folder/yui/yui",
+		"/Users/michaellittle/yui/build_folder/loader/loader",
+		"/Users/michaellittle/yui/build_folder/loader/loader.js",
+		"/usr/local/lib/node_modules/shifter/in",
+		"/Users/michaellittle/yui/binary-clock/assets/skins/skin1/binary-clock-skin.css",
+		"/Users/michaellittle/yui/binary-clock/assets/binary-clock-core.css",
+		"/Users/michaellittle/yui/binary-clock/js/binary-clock.js",
+		"/Users/michaellittle/yui/index.html",
+		"/Users/michaellittle/yui/yui3-master/src/yui/meta/yui.json",
+		"/Users/michaellittle/yui/yui3-master/src/dial/js/Dial.js",
+		"/Users/michaellittle/yui/build_folder/binary-clock/binary-clock-debug.js",
+		"/Users/michaellittle/yui/my_widget/meta/my_widget.json",
+		"/Users/michaellittle/yui/my_widget/build.json",
+		"/Users/michaellittle/yui/spinner/Spinner.html",
+		"/Users/michaellittle/yui/yui3-master/src/dial/assets/dial-core.css",
+		"/Users/michaellittle/node.js/strings.js",
+		"/Users/michaellittle/yui/yui3-master/src/dial/build.json",
+		"/Users/michaellittle/yui/yui3-master/src/dial/meta/dial.json",
+		"/Users/michaellittle/yui/spinner/Spinner.js",
+		"/Users/michaellittle/yui/my_module/build.json",
+		"/Users/michaellittle/yui/.shifter.json",
+		"/Users/michaellittle/yui/my_module/js/my_module.js",
+		"/Users/michaellittle/yui/yui3-master/src/panel/js/panel.js",
+		"/Users/michaellittle/yui/yui3-master/src/panel/build.json",
+		"/Users/michaellittle/yui/yui3-master/src/panel/meta/panel.json"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"",
+			"_lightbox-skin.scss",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"			  		",
+			"			  		\n",
+			"1",
+			"300px",
+			"\");\n",
+			"\n  ",
+			"tab",
+			"			\n",
+			"Messaggs",
+			"es</a></li>\n			  <li><a href=\"#settings\" data-toggle=\"tab\">Settin",
+			"                \n",
+			" >",
+			"hrefa",
+			"=\"\"></",
+			"\")\n",
+			"ResultT",
+			"methodDe",
+			"		\n",
+			"\n",
+			"*.",
+			"05",
+			"groupSize",
+			"addressbook \"name\"{\n	person \"name\"{\n		email abc@abc.com\n		phone(mobile) 0211234567\n		birthdate 02 November 1992\n		phone(work) +43122 ext 5678\n		address(home) \"842 New North Road, Auckland, New Zealand\"\n		address(asd2 ext 5678\n		address(home) \"842 New North Road, Auckland, New Zealand\"\n		address(work) \"20 Symonds Street, Auckland, New Zealand\"\n	}\n}",
+			"		\n",
+			"process",
+			"finishedBui",
+			"notify",
+			"var",
+			"cumulativeTotal",
+			"time",
+			"display",
+			"intl",
+			" ",
+			"\\s",
+			" \n",
+			"		\n",
+			"intest",
+			"long",
+			"currentTerm",
+			", 0",
+			"yui3",
+			"\">\n",
+			"				\n",
+			"min-height",
+			"26",
+			"@include min",
+			"26",
+			"none",
+			".yui3-icon-button",
+			"min-width",
+			"padding-left",
+			"					\n",
+			"white",
+			"box-shadow",
+			"boxshadow",
+			"active",
+			"\n			",
+			"construct",
+			"height",
+			"overflow",
+			"primaru",
+			"inherit",
+			"hd",
+			"legend",
+			"dt",
+			"h2",
+			"500",
+			".shadow",
+			"blur",
+			"tabIndex",
+			"tabindex",
+			"outline",
+			"focus",
+			".ft",
+			".hd",
+			".bd",
+			".bd\n",
+			"}\n",
+			"content",
+			"}\n",
+			".lightbox",
+			"lightbox",
+			".yui-dialog",
+			"padding:",
+			".hd",
+			".bd",
+			".ft",
+			"background-color",
+			".yui3-panel-container",
+			".yui3-panel-content",
+			".yui-panel-content",
+			".lightbox",
+			".mask",
+			"yui",
+			"calendar",
+			"Version",
+			"background-image",
+			"border-radius",
+			"min-width",
+			".use",
+			"shifter",
+			"cwd",
+			"'",
+			"get",
+			"render",
+			"arguments",
+			"samepage",
+			"orion",
+			"myButton"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"inputTotal",
+			"",
+			"longest",
+			"",
+			"longest",
+			"int",
+			"term",
+			".yui3-button-icon",
+			".yui3-widget-ft",
+			".yui3-widget-hd",
+			".yui3-widget-bd",
+			".yui3-panel-content",
+			".yui3-panel",
+			".yui3-widget-hd",
+			".yui3-widget-bd",
+			".yui3-widget-ft",
+			".yui3-panel",
+			".yui3-panel-content",
+			"yui3-widget-mask",
+			"yui3",
+			"\"",
+			"hive",
+			"myRegularButton"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 185.0,
+	"status_bar_visible": true
+}

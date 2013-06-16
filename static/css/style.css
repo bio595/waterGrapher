@@ -2,11 +2,36 @@
 {
 	
 	width: 800px;
-	height: 500px;
+	height: 450px;
 	margin:  5px auto;
 	
 }
 
 #spinnerContainer{
-	height: 60px;
+	position: absolute;
+	top: 50%;
+	margin-top: -70px;
+	left: 50%;
+	margin-left: -35px;
+	z-index: 2;
+	border: 2px solid black;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	height: 70px;
+	width: 70px;
+	background: rgba(50,50,50,0.5);
+}
+
+#errorAlert{
+	visibility: hidden;
+}
+
+#amountInput{
+	color: black;
+}
+
+#home{
+	position: relative;
+	
 }

@@ -7,17 +7,19 @@ $(function () {
 	//Get information for today
 	var data = loadToday();
 	var current = 0;
+	var yMax = roundUp25($("#weightInput").val()) / 25; 
 	//with our data plot some stuff
 	var plot = $.plot($("#placeholder"), data, { xaxis: { min: 8, max: 24, ticks:16},
-									  yaxis: { min: 0, max: 5, ticks:10}
+									  yaxis: { min: 0, max: yMax, ticks:10}
 									});
 
 	function loadToday () {
 		//Show spinner while we fetch data
 		$('#spinnerContainer').show();
 		$('#spinnerContainer').spin();
+		var yMax = roundUp25($("#weightInput").val()) / 25; 
 		//Create the data array with the target series as
-		var data = [{data: [ [8, 0], [24, 5] ], lines: { fill: true, fillColor: "rgba(255, 0, 0, 0.25)"}, color: "rgba(255, 0, 0, 1.0)" }];
+		var data = [{data: [ [8, 0], [24, yMax] ], lines: { fill: true, fillColor: "rgba(255, 0, 0, 0.25)"}, color: "rgba(255, 0, 0, 1.0)" }];
 		
 		//Get the data from the server
 		$.ajax({
@@ -69,7 +71,7 @@ $(function () {
 		
 		//Update the flot axes and target series
 		var options = plot.getOptions();
-		console.log(options);
+		
 		var data = plot.getData();
 		data[0].data[1][1] = targetLitres;
 
@@ -104,7 +106,6 @@ $(function () {
 			if(prev > amount){
 				//show alert
 				$("#errorAlert").show();
-				console.log(prev);
 				return;
 			}
 		}else{ //Nothing has been added yet
@@ -115,8 +116,17 @@ $(function () {
 		}
 		//Remove the possibility of drinking water back in time
 		$("#timeSelector option").each(function(index, val){
-			if(index <= selectedIndex) $(this).remove();
+			
+			if(index <= selectedIndex){
+				if($(this).val() == 24){
+					$('#addNewButton').attr('disabled', 'disabled');
+				}
+				$(this).remove();
+			}
+			
 		});
+
+
 		//FInally add the new point and redraw
 		series[1].data.push([time, amount]);
 		plot.setData(series);

@@ -3,10 +3,10 @@
 	<form id="addNewForm" class="form-inline">
 		
 		<label id="weightLabel" for="weightInput">Enter your weight in kg:</label>
-		<input type="text" id="weightInput" class="input-small"/><br /><br />
+		<input type="text" id="weightInput" class="input-small" value="80"/><br /><br />
 
 		<label id="amountLabel" for="amountInput">Enter your total consumption in Litres:</label>
-		<input type="text" id="amountInput" class="input-small"/> 
+		<input type="text" id="amountInput" class="input-small" value="0"/> 
 		<label id="timeLabel" for="timeSelector">Select the time:</label>
 		<select id="timeSelector" class="input-small">
 			{% for x in range(8, 25) %}

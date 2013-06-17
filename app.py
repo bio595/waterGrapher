@@ -11,7 +11,8 @@ def index():
 
 @app.route("/<name>/")
 def name(name):
-	return json.dumps([[8,0], [9, 5]])
+	return json.dumps([[8,0]])
 
 if __name__ == '__main__':
-	app.run()
+
+	app.run(debug=True)

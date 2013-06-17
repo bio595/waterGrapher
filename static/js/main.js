@@ -94,24 +94,25 @@ $(function () {
 		var time = $("#timeSelector").val();
 		var selectedIndex = $("#timeSelector")[0].selectedIndex;
 
-		$("#timeSelector option").each(function(index, val){
-			if(index <= selectedIndex) $(this).remove();
-		});
+		
 
 		var series = plot.getData();
 		
-		if(series.length == 1){//First insert
-			series.push({data: [], points:{ show: true, fill: true, fillColor: "rgba(0, 50, 200, 1)"}, lines: { show: true, fill: true, fillColor: "rgba(0, 50, 200, 0.25)"}, color: "rgba(0, 0, 230,  1.0)" });
-		}
-		var prev = series[1].data[series[1].data.length - 1][1];
+		if(series[1].data.length !== 0){
 		
-		if(prev > amount){
-			//show alert
-			$("#errorAlert").show();
-			console.log(prev);
-			return;
+			//Make sure we arent losing total water
+			var prev = series[1].data[series[1].data.length - 1][1];
+			if(prev > amount){
+				//show alert
+				$("#errorAlert").show();
+				console.log(prev);
+				return;
+			}
 		}
-
+		//Remove the possibility of drinking water back in time
+		$("#timeSelector option").each(function(index, val){
+			if(index <= selectedIndex) $(this).remove();
+		});
 
 		series[1].data.push([time, amount]);
 		plot.setData(series);

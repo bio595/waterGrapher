@@ -2,8 +2,7 @@ $(function () {
 	
 	//restrict the input of the form to positive numbers
 	$("#amountInput").numeric({negative: false});
-
-	
+	$("#weightInput").numeric({negative: false});
 
 	//Get information for today
 	var data = loadToday();
@@ -59,6 +58,29 @@ $(function () {
 	  
 	});
 
+	//Event handler for weight input
+	$("#weightInput").on('keyup', function (e){
+		//Retrieve the value
+		var val = $("#weightInput").val();
+		if(val === "") return;
+		if (!(e.keyCode >= 48 && e.keyCode <= 57 || e.keyCode === 8)) return;
+		
+		var targetLitres = roundUp25(val) / 25; 
+		
+		//Update the flot axes and target series
+		var options = plot.getOptions();
+		console.log(options);
+		var data = plot.getData();
+		data[0].data[1][1] = targetLitres;
+
+		plot.setData(data);
+		
+		options.yaxes[0].max = targetLitres;
+		
+		plot = $.plot($("#placeholder"), data, options);
+
+	});
+
 	//Event handler for add button
 	$('#addNewButton').on('click', function (e) {
 		e.preventDefault();
@@ -78,6 +100,17 @@ $(function () {
 		plot.setData(series);
 		plot.draw();
 	});
+
+	function roundUp25(weight){
+		weight = parseInt(weight);
+		//find the difference that we need to round up by
+		var diff = weight % 25;
+		if(diff === 0){
+			return weight;
+		}else{
+			return weight + (25 - diff);
+		}
+	}
 
 });
 

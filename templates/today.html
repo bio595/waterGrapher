@@ -1,14 +1,21 @@
 <div id="spinnerContainer"></div>
-			  	<div id="placeholder"></div>
-			  	<form id="addNewForm" class="form-inline">
-			  		<input type="text" id="amountInput"/> 
-			  		<select id="timeSelector">
-			  			{% for x in range(8, 25) %}
-			  				<option value="{{x}}">{{x}}</option>
-			  			{% endfor %}
-			  		</select>
-			  	<button type="submit" id="addNewButton" class="btn btn-primary">Add</button>
-			  	</form>
-			  	<div id="errorAlert" class="alert alert-error">
-				  <strong>Warning!</strong> Best check yo self, you're not looking too good.
-				</div>	
+	<div id="placeholder"></div>
+	<form id="addNewForm" class="form-inline">
+		
+		<label id="weightLabel" for="weightInput">Enter your weight in kg:</label>
+		<input type="text" id="weightInput" class="input-small"/><br /><br />
+
+		<label id="amountLabel" for="amountInput">Enter your total consumption in Litres:</label>
+		<input type="text" id="amountInput" class="input-small"/> 
+		<label id="timeLabel" for="timeSelector">Select the time:</label>
+		<select id="timeSelector" class="input-small">
+			{% for x in range(8, 25) %}
+				<option value="{{x}}">{{x}}</option>
+			{% endfor %}
+		</select>
+		<button type="submit" id="addNewButton" class="btn btn-primary">Add</button>
+		
+	</form>
+	<div id="errorAlert" class="alert alert-error">
+  	<strong>Warning!</strong> Best check yo self, you're not looking too good.
+</div>	

@@ -90,14 +90,13 @@ $(function () {
 		var amount = $("#amountInput").val();
 		
 
-		//Get the time
+		//Get the time and sleccted index
 		var time = $("#timeSelector").val();
 		var selectedIndex = $("#timeSelector")[0].selectedIndex;
 
-		
-
 		var series = plot.getData();
 		
+		//If this isnt the first addition
 		if(series[1].data.length !== 0){
 		
 			//Make sure we arent losing total water
@@ -108,12 +107,17 @@ $(function () {
 				console.log(prev);
 				return;
 			}
+		}else{ //Nothing has been added yet
+			if (selectedIndex !== 0){
+				//add a point at 8,0
+				series[1].data.push([8, 0]);
+			}
 		}
 		//Remove the possibility of drinking water back in time
 		$("#timeSelector option").each(function(index, val){
 			if(index <= selectedIndex) $(this).remove();
 		});
-
+		//FInally add the new point and redraw
 		series[1].data.push([time, amount]);
 		plot.setData(series);
 		plot.draw();

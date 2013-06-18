@@ -23,9 +23,16 @@ def login():
 			if data['username'] == 'mike' and data['password'] == 'sweet':
 				return make_response("OK", 200)
 			else:
-				return make_response("Nah", 403)
+			 	return make_response("Nah", 403)
 	else:
 		return render_template('login.html')
+
+@app.route("/signup", methods=['POST'])
+def signup():
+	return request.data;
+
+
+
 
 if __name__ == '__main__':
 	app.secret_key = "A key what should be secret"

@@ -1,10 +1,8 @@
 #placeholder
 {
-	
 	width: 800px;
 	height: 450px;
 	margin:  5px auto;
-	
 }
 
 #spinnerContainer{
@@ -38,4 +36,16 @@
 #home{
 	position: relative;
 	
+}
+
+#loginBox{
+	display: inline-block;
+	border: 2px solid;
+	border-radius: 5px;
+	margin: 20px auto;
+	padding: 10px;
+	text-align: left;
+}
+#loginBox input{
+	color:black;
 }

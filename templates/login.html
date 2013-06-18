@@ -3,8 +3,35 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Login to WaterGrapher</title>
+	<link rel="shortcut icon" href=" {{ url_for('static', filename='favicon.ico') }}" />
+
+        <!-- Skinned Bootstrap, FontAwesome and jQuery -->
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <link href="//netdna.bootstrapcdn.com/bootswatch/2.1.0/cyborg/bootstrap.no-icons.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-	<h1>fuck you</h1>
+	<div class="container">
+		<div class="row" style="text-align: center;">
+			<div id="loginBox">
+				<h4>Sign In</h4>
+				<hr />
+				<form action="">
+					<label for="usernameInput">Username:</label>
+					<input type="text" id="usernameInput">
+					<label for="passwordInput">Password:</label>
+					<input type="text" id="passwordInput">
+					<br/>
+					<button id="logInButton" class="btn btn-primary">Log In</button>
+					<button id="signUpButton" class="btn">Sign Up</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="{{ url_for('static', filename='js/login.js') }}"></script>
 </body>
 </html>

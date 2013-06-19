@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask, render_template, request, session, abort, make_response
+from flask import Flask, render_template, request, abort, redirect
 from models import User, db
 import json
 from server import app
@@ -18,11 +18,17 @@ def login():
 		if(data is None or not 'username' in data or not 'password' in data):
 			abort(400)
 		else:
-			#do awesome database call
-			if data['username'] == 'mike' and data['password'] == 'sweet':
-				return make_response("OK", 200)
+			count = User.query.filter(User.username == data['username']).count()
+			if(count == 0):
+				abort(404) #that user doesnt exist
 			else:
-			 	return make_response("Nah", 403)
+				passIsCorrect = User.query.filter(User.username == data['username'], User.password == data['password']).count()
+				if(passIsCorrect):
+					return redirect(url_for('/'))
+				else:
+					abort(401)
+
+			
 	else:
 		return render_template('login.html')
 

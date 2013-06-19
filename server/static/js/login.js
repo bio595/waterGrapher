@@ -2,11 +2,32 @@ $(function(){
 	$("#logInButton").click(function(e){
 		e.preventDefault();
 		
+		doRequest('/login',
+			function (responseData, textStatus, jqXHR){
+				
+			},
+			function(responseData, textStatus, jqXHR){
+				if(responseData.status == 401){
+					$("#loginError").show();
+				}
+			});
 	});
 
 	$("#signUpButton").click(function(e){
 		e.preventDefault();
 		
+		doRequest('/signup', 
+			function (responseData, textStatus, jqXHR){
+				
+			},
+			function(responseData, textStatus, jqXHR){
+				if(responseData.status == 409){
+					$("#signupError").show();
+				}
+			});
+	});
+
+	function doRequest(url, successFun, errorFun){
 		$("#signupError").hide();
 		$("#loginError").hide();
 
@@ -21,16 +42,9 @@ $(function(){
 			data: JSON.stringify(body),
 			dataType: 'json',
 			contentType: 'application/json; charset=utf-8',
-			url: '/signup', 
-			success: function (responseData, textStatus, jqXHR){
-				console.log(responseData);
-			},
-			error: function(responseData, textStatus, jqXHR){
-				if(responseData.status == 409){
-					$("#signupError").show();
-				}
-			}
+			url: url, 
+			success: successFun,
+			error: errorFun
 		});
-
-	});
+	}
 });

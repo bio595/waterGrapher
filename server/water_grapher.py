@@ -2,7 +2,7 @@ import os
 
 from flask import Flask, render_template, request, session, abort, make_response
 from models import User, db
-
+import json
 from server import app
 
 @app.route("/")
@@ -37,6 +37,6 @@ def signup():
 			abort(409)
 		else:
 			#create the user
-			db.add(User(data['username'], ['password']))
+			db.add(User(data['username'], data['password']))
 			db.commit()
-			return data
+			return json.dumps(data)

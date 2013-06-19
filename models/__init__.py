@@ -13,8 +13,10 @@ db = scoped_session(sessionmaker(autocommit=False,
 Base = declarative_base()
 Base.query = db.query_property()
 
+from models.user import User
 
-def init_db(num_patients=100, min_vital_infos=2, max_vital_infos=10):
+
+def init_db():
 
     Base.metadata.create_all(bind=engine)
 

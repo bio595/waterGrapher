@@ -24,11 +24,13 @@
 					<label for="usernameInput">Username:</label>
 					<input type="text" id="usernameInput">
 					<label for="passwordInput">Password:</label>
-					<input type="text" id="passwordInput">
+					<input type="password" id="passwordInput">
 					<br/>
 					<button id="logInButton" class="btn btn-primary">Log In</button>
 					<button id="signUpButton" class="btn">Sign Up</button>
 				</form>
+				<div class="alert alert-error" id="signupError">That username is already taken :(</div>
+				<div class="alert alert-error" id="loginError"></div>
 			</div>
 		</div>
 	</div>

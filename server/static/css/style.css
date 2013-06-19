@@ -49,3 +49,7 @@
 #loginBox input{
 	color:black;
 }
+
+#signupError, #loginError{
+	display: none;
+}

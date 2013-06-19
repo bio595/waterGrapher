@@ -14,6 +14,7 @@ def login():
 	if(request.method == "POST"):
 		#retrieve the username and password sent
 		data = request.json
+
 		if(data is None or not 'username' in data or not 'password' in data):
 			abort(400)
 		else:
@@ -24,6 +25,9 @@ def login():
 			 	return make_response("Nah", 403)
 	else:
 		return render_template('login.html')
+
+
+
 
 @app.route("/signup", methods=['POST'])
 def signup():

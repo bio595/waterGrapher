@@ -4,8 +4,96 @@
 		"selected_items":
 		[
 			[
+				"erro",
+				"errorFun"
+			],
+			[
+				"su",
+				"successFun"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"pas",
+				"passIsCorrect"
+			],
+			[
+				"exis",
+				"exists"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
 				"re",
-				"relative"
+				"request"
+			],
+			[
+				"ta",
+				"ta	text-align"
+			],
+			[
+				"se",
+				"selectedIndex"
+			],
+			[
+				"time",
+				"time"
+			],
+			[
+				"targ",
+				"targetLitres"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"key",
+				"keyCode"
+			],
+			[
+				"k",
+				"keyCode"
+			],
+			[
+				"tar",
+				"targetLitres"
+			],
+			[
+				"w",
+				"weight"
+			],
+			[
+				"round",
+				"roundUp25"
+			],
+			[
+				"weight",
+				"weightInput"
+			],
+			[
+				"fn",
+				"function"
+			],
+			[
+				"po",
+				"pos:r	position:relative"
+			],
+			[
+				"rg",
+				"rgba	rgba()"
+			],
+			[
+				"fill",
+				"fillColor"
+			],
+			[
+				"vis",
+				"visibility"
 			],
 			[
 				"load",
@@ -98,10 +186,6 @@
 			[
 				"e",
 				"expect"
-			],
-			[
-				"fun",
-				"fun	Function"
 			],
 			[
 				"ch",
@@ -252,10 +336,6 @@
 				"primeCount"
 			],
 			[
-				"su",
-				"sumOfSquares"
-			],
-			[
 				"is",
 				"isPalendrome"
 			],
@@ -372,10 +452,6 @@
 				"htmlString"
 			],
 			[
-				"w",
-				"width"
-			],
-			[
 				"torr",
 				"torrents-list"
 			],
@@ -412,10 +488,6 @@
 				"TIME_BIT_TEMPLATE"
 			],
 			[
-				"time",
-				"timeUnit"
-			],
-			[
 				"hour",
 				"hoursContainer"
 			],
@@ -442,61 +514,57 @@
 			[
 				"ti",
 				"time-bit"
-			],
-			[
-				"a",
-				"aMethod"
-			],
-			[
-				"read",
-				"readFile"
-			],
-			[
-				"un",
-				"unallowed_regexes"
-			],
-			[
-				"pe",
-				"permissionsFile"
-			],
-			[
-				"Set",
-				"Setup"
-			],
-			[
-				"W",
-				"writeHead"
-			],
-			[
-				"tore",
-				"torrentsQueue"
-			],
-			[
-				"butt",
-				"button1"
-			],
-			[
-				"src",
-				"srcNode"
-			],
-			[
-				"li",
-				"link	Tag"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "server/static/js/login.js",
+			"settings":
+			{
+				"buffer_size": 1028,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/water_grapher.py",
+			"settings":
+			{
+				"buffer_size": 1277,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/templates/login.html",
+			"settings":
+			{
+				"buffer_size": 1535,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/static/css/style.css",
+			"settings":
+			{
+				"buffer_size": 692,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 67.0,
+		"height": 387.0,
 		"selected_items":
 		[
 			[
-				"jspr",
-				"Pretty JSON: Reformat (Pretty Print) JSON"
+				"send",
+				"Send to evernote"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
 			],
 			[
 				"html",
@@ -505,6 +573,10 @@
 			[
 				"insta",
 				"Package Control: Install Package"
+			],
+			[
+				"jspr",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
 			],
 			[
 				"ind",
@@ -567,10 +639,6 @@
 				"Set Syntax: Diff"
 			],
 			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
 				"instal",
 				"Package Control: Install Package"
 			],
@@ -604,10 +672,22 @@
 	},
 	"file_history":
 	[
-		"/Users/michaellittle/Repos/waterGrapher/static/js/main.js",
-		"/Users/michaellittle/Repos/waterGrapher/static/css/style.css",
-		"/Users/michaellittle/Repos/waterGrapher/templates/index.html",
+		"/Users/michaellittle/Repos/waterGrapher/server/__init__.py",
 		"/Users/michaellittle/Repos/waterGrapher/app.py",
+		"/Users/michaellittle/Repos/waterGrapher/models/user.py",
+		"/Users/michaellittle/Repos/waterGrapher/models/__init__.py",
+		"/Users/michaellittle/Repos/waterGrapher/server/water_grapher.py",
+		"/Users/michaellittle/Repos/waterGrapher/.gitignore",
+		"/Users/michaellittle/Repos/waterGrapher/waterGrapher.sublime-project",
+		"/Users/michaellittle/Repos/waterGrapher/templates/login.html",
+		"/Users/michaellittle/Repos/waterGrapher/static/js/login.js",
+		"/Users/michaellittle/Repos/waterGrapher/.env",
+		"/Users/michaellittle/Repos/waterGrapher/static/css/style.css",
+		"/Users/michaellittle/Repos/waterGrapher/static/js/main.js",
+		"/Users/michaellittle/Repos/waterGrapher/templates/today.html",
+		"/Users/michaellittle/Repos/waterGrapher/templates/history.html",
+		"/Users/michaellittle/Repos/waterGrapher/templates/index.html",
+		"/Users/michaellittle/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/michaellittle/Repos/waterGrapher/static/style.css",
 		"/Users/michaellittle/Repos/waterGrapher/Procfile",
 		"/Users/michaellittle/Repos/waterGrapher/Procfil",
@@ -648,7 +728,6 @@
 		"/Users/michaellittle/Repos/waterGrapher/waterGrapher/test/testUtils.js",
 		"/Users/michaellittle/.zshrc",
 		"/Users/michaellittle/Repos/UniPlanner/uniPlanner/public/css/style.css",
-		"/Users/michaellittle/Repos/waterGrapher/.gitignore",
 		"/Users/michaellittle/robbyshit.c",
 		"/Volumes/NO NAME/MANWST_20130312.txt",
 		"/Users/michaellittle/Downloads/zsh-5.0-1.2/INSTALL",
@@ -720,18 +799,7 @@
 		"/Users/michaellittle/yui/build_folder/binary-clock/binary-clock-debug.js",
 		"/Users/michaellittle/yui/my_widget/meta/my_widget.json",
 		"/Users/michaellittle/yui/my_widget/build.json",
-		"/Users/michaellittle/yui/spinner/Spinner.html",
-		"/Users/michaellittle/yui/yui3-master/src/dial/assets/dial-core.css",
-		"/Users/michaellittle/node.js/strings.js",
-		"/Users/michaellittle/yui/yui3-master/src/dial/build.json",
-		"/Users/michaellittle/yui/yui3-master/src/dial/meta/dial.json",
-		"/Users/michaellittle/yui/spinner/Spinner.js",
-		"/Users/michaellittle/yui/my_module/build.json",
-		"/Users/michaellittle/yui/.shifter.json",
-		"/Users/michaellittle/yui/my_module/js/my_module.js",
-		"/Users/michaellittle/yui/yui3-master/src/panel/js/panel.js",
-		"/Users/michaellittle/yui/yui3-master/src/panel/build.json",
-		"/Users/michaellittle/yui/yui3-master/src/panel/meta/panel.json"
+		"/Users/michaellittle/yui/spinner/Spinner.html"
 	],
 	"find":
 	{
@@ -752,6 +820,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"print",
+			"cons",
+			"auto",
+			"();",
+			"Heyo",
+			"({)\n",
+			"										\n",
 			"			  		",
 			"			  		\n",
 			"1",
@@ -901,8 +976,117 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "server/static/js/login.js",
+					"settings":
+					{
+						"buffer_size": 1028,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								326,
+								326
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "server/water_grapher.py",
+					"settings":
+					{
+						"buffer_size": 1277,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								77,
+								77
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "server/templates/login.html",
+					"settings":
+					{
+						"buffer_size": 1535,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								871,
+								871
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "server/static/css/style.css",
+					"settings":
+					{
+						"buffer_size": 692,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								592,
+								592
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 29.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -965,7 +1149,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
-	"side_bar_width": 185.0,
+	"side_bar_visible": false,
+	"side_bar_width": 209.0,
 	"status_bar_visible": true
 }

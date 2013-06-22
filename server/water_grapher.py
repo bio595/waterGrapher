@@ -1,12 +1,14 @@
 import os
 
-from flask import Flask, render_template, request, abort, redirect
+from flask import Flask, render_template, request, abort, redirect, url_for, session, make_response
 from models import User, db
 import json
 from server import app
 
 @app.route("/")
 def index():
+	if 'user' not in session:
+		return redirect(url_for('login'))
 	return render_template('index.html')
 
 @app.route("/login", methods=['GET', 'POST'])
@@ -24,16 +26,19 @@ def login():
 			else:
 				passIsCorrect = User.query.filter(User.username == data['username'], User.password == data['password']).count()
 				if(passIsCorrect):
-					return redirect(url_for('/'))
+					session['user'] = data['username']
+					response = make_response('logged in succesfully', 307)
+					return response
 				else:
 					abort(401)
-
-			
+		
 	else:
 		return render_template('login.html')
 
-
-
+@app.route("/logout", methods=['POST'])
+def logout():
+	del session['user']
+	return make_response('OK', 200)
 
 @app.route("/signup", methods=['POST'])
 def signup():

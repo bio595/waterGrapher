@@ -52,11 +52,17 @@ $(function () {
 	//Events for tabs
 	$('a[data-toggle="tab"]').on('shown', function (e) {
 	  
-	  if(e.target.id === "todayTab"){
-	  	loadToday();	
-	  }else if(e.target.id === "historyTab"){
-	  	loadHistory();
-	  }
+		if(e.target.id === "todayTab"){
+			loadToday();	
+		}else if(e.target.id === "historyTab"){
+			loadHistory();
+		}else if(e.target.id === "signOutTab"){
+			var req = $.post('/logout');
+			req.always(function (argument) {
+				window.location = "/login";
+			});
+			
+		}
 	  
 	});
 

@@ -20,17 +20,20 @@
 			<div id="loginBox">
 				<h4>Sign In</h4>
 				<hr />
-				<form action="">
+				<form action="/login" method="post">
 					<label for="usernameInput">Username:</label>
-					<input type="text" id="usernameInput">
+					<input type="text" id="usernameInput" name="username">
 					<label for="passwordInput">Password:</label>
-					<input type="password" id="passwordInput">
+					<input type="password" id="passwordInput" name="password">
 					<br/>
-					<button id="logInButton" class="btn btn-primary">Log In</button>
+					<button id="logInButton" type="submit" class="btn btn-primary">Log In</button>
 					<button id="signUpButton" class="btn">Sign Up</button>
 				</form>
-				<div class="alert alert-error" id="signupError">That username is already taken :(</div>
-				<div class="alert alert-error" id="loginError"></div>
+				{% if error == 'username' %}
+					<div class="alert alert-error">That username doesn't exist</div>
+				{% elif error == 'password' %}
+					<div class="alert alert-error">Incorrect password</div>
+				{% endif %}
 			</div>
 		</div>
 	</div>

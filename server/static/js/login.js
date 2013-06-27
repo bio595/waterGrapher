@@ -1,26 +1,4 @@
 $(function(){
-	$("#logInButton").click(function(e){
-		e.preventDefault();
-		
-		doRequest('/login',
-			function (responseData, textStatus, jqXHR){
-				console.log(textStatus)
-			},
-			function (responseData, textStatus, jqXHR){
-				if(responseData.status == 401){
-					$("#loginError").show();
-					$("#loginError").html("Password incorrect");
-				}else if(responseData.status == 404){
-					$("#loginError").show();
-					$("#loginError").html("Username wasn't not found");
-				}
-			},
-			function (jqXHR, textStatus){
-				if(jqXHR.status == 307){
-					window.location = '/'
-				}
-			});
-	});
 
 	$("#signUpButton").click(function(e){
 		e.preventDefault();

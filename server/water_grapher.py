@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask, render_template, request, abort, redirect, url_for, session, make_response
+from flask import Flask, flash, render_template, request, abort, redirect, url_for, session, make_response
 from models import User, db
 import json
 from server import app
@@ -8,13 +8,14 @@ from server import app
 def loggedIn(f):
 	def new_f():
 		if 'user' not in session:
-			return redirect(url_for('login'))
+			return redirect('/login')
 		else:
 			return f()
+	
 	return new_f
 
-@app.route("/")
 @loggedIn
+@app.route("/")
 def index():
 	return render_template('index.html')
 
@@ -22,24 +23,26 @@ def index():
 def login():
 	if(request.method == "POST"):
 		#retrieve the username and password sent
-		data = request.json
+		data = request.form
 
 		if(data is None or not 'username' in data or not 'password' in data):
 			abort(400)
 		else:
 			count = User.query.filter(User.username == data['username']).count()
 			if(count == 0):
-				abort(404) #that user doesnt exist
+				return render_template('login.html', error='username')
 			else:
 				passIsCorrect = User.query.filter(User.username == data['username'], User.password == data['password']).count()
 				if(passIsCorrect):
 					session['user'] = data['username']
-					response = make_response('logged in succesfully', 307)
-					return response
+					return redirect('/')
 				else:
-					abort(401)
+					return render_template('login.html', error='password')
+					
 		
 	else:
+		if 'user' in session:
+			return redirect('/')
 		return render_template('login.html')
 
 @app.route("/logout", methods=['POST'])

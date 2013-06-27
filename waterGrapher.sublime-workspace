@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"d",
+				"day"
+			],
+			[
+				"logge",
+				"loggedIn"
+			],
+			[
+				"user",
+				"user"
+			],
+			[
+				"method",
+				"methods"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"te",
+				"textStatus"
+			],
+			[
+				"com",
+				"completeFun"
+			],
+			[
+				"log",
+				"loginError"
+			],
+			[
+				"l",
+				"login"
+			],
+			[
 				"erro",
 				"errorFun"
 			],
@@ -22,14 +58,6 @@
 			[
 				"exis",
 				"exists"
-			],
-			[
-				"user",
-				"username"
-			],
-			[
-				"re",
-				"request"
 			],
 			[
 				"ta",
@@ -176,10 +204,6 @@
 				"array1"
 			],
 			[
-				"l",
-				"lerp"
-			],
-			[
 				"f",
 				"f	Anonymous Function"
 			],
@@ -238,10 +262,6 @@
 			[
 				"err",
 				"error_reporting"
-			],
-			[
-				"d",
-				"dCache"
 			],
 			[
 				"m",
@@ -494,47 +514,11 @@
 			[
 				"Co",
 				"CONTAINER_TEMPLATE"
-			],
-			[
-				"cont",
-				"contentBox"
-			],
-			[
-				"con",
-				"contentBox"
-			],
-			[
-				"timeB",
-				"timeBit"
-			],
-			[
-				"C",
-				"CSS_CLASSES"
-			],
-			[
-				"ti",
-				"time-bit"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "server/static/js/login.js",
-			"settings":
-			{
-				"buffer_size": 1028,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "server/water_grapher.py",
-			"settings":
-			{
-				"buffer_size": 1277,
-				"line_ending": "Unix"
-			}
-		},
 		{
 			"file": "server/templates/login.html",
 			"settings":
@@ -548,6 +532,22 @@
 			"settings":
 			{
 				"buffer_size": 692,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/templates/index.html",
+			"settings":
+			{
+				"buffer_size": 1983,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/static/js/main.js",
+			"settings":
+			{
+				"buffer_size": 3898,
 				"line_ending": "Unix"
 			}
 		}
@@ -672,11 +672,12 @@
 	},
 	"file_history":
 	[
+		"/Users/michaellittle/Repos/waterGrapher/server/water_grapher.py",
+		"/Users/michaellittle/Repos/waterGrapher/server/static/js/login.js",
 		"/Users/michaellittle/Repos/waterGrapher/server/__init__.py",
 		"/Users/michaellittle/Repos/waterGrapher/app.py",
 		"/Users/michaellittle/Repos/waterGrapher/models/user.py",
 		"/Users/michaellittle/Repos/waterGrapher/models/__init__.py",
-		"/Users/michaellittle/Repos/waterGrapher/server/water_grapher.py",
 		"/Users/michaellittle/Repos/waterGrapher/.gitignore",
 		"/Users/michaellittle/Repos/waterGrapher/waterGrapher.sublime-project",
 		"/Users/michaellittle/Repos/waterGrapher/templates/login.html",
@@ -798,8 +799,7 @@
 		"/Users/michaellittle/yui/yui3-master/src/dial/js/Dial.js",
 		"/Users/michaellittle/yui/build_folder/binary-clock/binary-clock-debug.js",
 		"/Users/michaellittle/yui/my_widget/meta/my_widget.json",
-		"/Users/michaellittle/yui/my_widget/build.json",
-		"/Users/michaellittle/yui/spinner/Spinner.html"
+		"/Users/michaellittle/yui/my_widget/build.json"
 	],
 	"find":
 	{
@@ -976,65 +976,11 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "server/static/js/login.js",
-					"settings":
-					{
-						"buffer_size": 1028,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								326,
-								326
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "server/water_grapher.py",
-					"settings":
-					{
-						"buffer_size": 1277,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								77,
-								77
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "server/templates/login.html",
 					"settings":
 					{
@@ -1061,7 +1007,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 1,
 					"file": "server/static/css/style.css",
 					"settings":
 					{
@@ -1082,7 +1028,63 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 29.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "server/templates/index.html",
+					"settings":
+					{
+						"buffer_size": 1983,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1555,
+								1555
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "server/static/js/main.js",
+					"settings":
+					{
+						"buffer_size": 3898,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1910,
+								1910
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 598.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1149,7 +1151,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
-	"side_bar_width": 209.0,
+	"side_bar_visible": true,
+	"side_bar_width": 132.0,
 	"status_bar_visible": true
 }

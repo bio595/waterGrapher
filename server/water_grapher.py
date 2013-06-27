@@ -5,10 +5,17 @@ from models import User, db
 import json
 from server import app
 
+def loggedIn(f):
+	def new_f():
+		if 'user' not in session:
+			return redirect(url_for('login'))
+		else:
+			return f()
+	return new_f
+
 @app.route("/")
+@loggedIn
 def index():
-	if 'user' not in session:
-		return redirect(url_for('login'))
 	return render_template('index.html')
 
 @app.route("/login", methods=['GET', 'POST'])
@@ -55,3 +62,13 @@ def signup():
 			db.add(User(data['username'], data['password']))
 			db.commit()
 			return json.dumps(data)
+
+@app.route("/history")
+@loggedIn
+def history():
+	pass
+
+
+@app.route("/history/<int:year>-<int:month>-<int:day>")
+def volumeForDay(year, month, day):
+	return str(year) + "-" + str(month) + "-" + str(day)

@@ -66,12 +66,17 @@ def signup():
 			db.commit()
 			return json.dumps(data)
 
-@app.route("/history")
 @loggedIn
+@app.route("/history")
 def history():
 	pass
 
+@loggedIn
+@app.route("/today")
+def today():
+	pass
 
+@loggedIn
 @app.route("/history/<int:year>-<int:month>-<int:day>")
 def volumeForDay(year, month, day):
 	return str(year) + "-" + str(month) + "-" + str(day)

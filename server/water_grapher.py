@@ -1,9 +1,12 @@
 import os
 
 from flask import Flask, flash, render_template, request, abort, redirect, url_for, session, make_response
+# from flask.ext.restful import reqparse, abort, Api, Resource
 from models import User, db
 import json
 from server import app
+
+# api = Api(app)
 
 def loggedIn(f):
 	def new_f():
@@ -65,6 +68,7 @@ def signup():
 			db.add(User(data['username'], data['password']))
 			db.commit()
 			return json.dumps(data)
+
 
 @loggedIn
 @app.route("/history")

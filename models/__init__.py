@@ -14,10 +14,11 @@ Base = declarative_base()
 Base.query = db.query_property()
 
 from models.user import User
+from models.day import Day
+from models.consumption import Consumption
 
 
 def init_db():
-
     Base.metadata.create_all(bind=engine)
 
 

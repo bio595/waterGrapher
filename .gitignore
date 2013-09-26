@@ -3,5 +3,7 @@ venv
 .DS_STORE
 .env
 test.db
+
+#sublime files
 *.sublime-project
 *.sublime-workspace

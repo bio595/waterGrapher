@@ -10,9 +10,9 @@ class User(Base):
 	username = Column(String)
 	password = Column(String)
 
-	history = relationship(
-		'history',
-		backref='user'
+	days = relationship(
+		'Day',
+		backref='user',
 		cascade='delete'
 	)
 

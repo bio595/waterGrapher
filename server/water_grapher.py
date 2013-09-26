@@ -67,7 +67,6 @@ def signup():
 			db.commit()
 			return json.dumps(data)
 
-
 @loggedIn
 @app.route("/history")
 def history():
@@ -98,5 +97,12 @@ def today():
 @loggedIn
 @app.route("/history/<int:year>-<int:month>-<int:day>")
 def volumeForDay(year, month, day):
-	#returns consumption details for a specific day
-	return str(year) + "-" + str(month) + "-" + str(day)
+	'''Return a list of consumption details for the specified day'''
+	#Retrieve the User that is logged in.
+	user = User.query.filter(User.username == session['username']).first()
+	#fetch list of days by user id and todays date
+	query = Day.query.filter(Day.user_id == user.username, Day.date == date(year, month, day))
+	if query.count() == 0:
+		abort(404)
+	else:
+		return query.first().serialize()

@@ -1,12 +1,9 @@
 import os
 
 from flask import Flask, flash, render_template, request, abort, redirect, url_for, session, make_response
-# from flask.ext.restful import reqparse, abort, Api, Resource
 from models import User, db
 import json
 from server import app
-
-# api = Api(app)
 
 def loggedIn(f):
 	def new_f():
@@ -73,14 +70,18 @@ def signup():
 @loggedIn
 @app.route("/history")
 def history():
+	#Returns a list of days with consumption details
 	pass
+
 
 @loggedIn
 @app.route("/today")
 def today():
+	#return a list of consumption details for the current day
 	pass
 
 @loggedIn
 @app.route("/history/<int:year>-<int:month>-<int:day>")
 def volumeForDay(year, month, day):
+	#returns consumption details for a specific day
 	return str(year) + "-" + str(month) + "-" + str(day)

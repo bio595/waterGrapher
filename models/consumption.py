@@ -9,6 +9,7 @@ class Consumption(Base):
 	id = Column(Integer, primary_key=True)
 	day_id = Column(Integer, ForeignKey("days.id"))
 	amount = Column(Float)
+	weight = Column(Integer)
 	time = Column(DateTime, default=datetime.now)
 
 	def __init__(self, user, weight):

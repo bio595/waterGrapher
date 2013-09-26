@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.orm import relationship
 from models import Base
-
+import json
 class User(Base):
 
 	__tablename__ = 'users'
@@ -20,3 +20,6 @@ class User(Base):
 		super(User, self).__init__()
 		self.username = username
 		self.password = password
+
+	def serialize(self):
+		return json.dumps({'username' : self.username, 'password' : self.password, "days": self.days})

@@ -26,17 +26,21 @@ $(function () {
 			url : "/today",
 			success: function (responseData, textStatus, jqXHR){
 				
-				alert(responseData);
+				jsonData = JSON.parse(responseData);
 
-				//Add it to the plot
-				var series = plot.getData();
-				
-				if(series.length == 1){//First insert
-					series.push({data: [], points:{ show: true, fill: true, fillColor: "rgba(0, 50, 200, 1)"}, lines: { show: true, fill: true, fillColor: "rgba(0, 50, 200, 0.25)"}, color: "rgba(0, 0, 230,  1.0)" });
+				//If there is data
+				if(jsonData.consumption.length != 0){				
+
+					//Add it to the plot
+					var series = plot.getData();
+					
+					if(series.length == 1){//First insert
+						series.push({data: [], points:{ show: true, fill: true, fillColor: "rgba(0, 50, 200, 1)"}, lines: { show: true, fill: true, fillColor: "rgba(0, 50, 200, 0.25)"}, color: "rgba(0, 0, 230,  1.0)" });
+					}
+					series[1].data = series[1].data.concat(JSON.parse(responseData));
+					plot.setData(series);
+					plot.draw();
 				}
-				series[1].data = series[1].data.concat(JSON.parse(responseData));
-				plot.setData(series);
-				plot.draw();
 
 				//Hide the spinner now that we're done
 				$('#spinnerContainer').spin(false);
@@ -65,7 +69,6 @@ $(function () {
 			});
 			
 		}
-	  
 	});
 
 	//Event handler for weight input

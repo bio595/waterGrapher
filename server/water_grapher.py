@@ -9,14 +9,13 @@ from datetime import date, datetime
 
 def loggedIn(f):
 	@wraps(f)
-	def new_f():
+	def new_f(*args, **kwargs):
 		print "Heyo"
 		if 'username' not in session:
 			return redirect('/login')
 		else:
-			return f()
+			return f(*args, **kwargs)
 	return new_f
-
 
 @app.route("/")
 @loggedIn
@@ -42,8 +41,7 @@ def login():
 					return redirect('/')
 				else:
 					return render_template('login.html', error='password')
-					
-		
+						
 	else:
 		if 'username' in session:
 			return redirect('/')
@@ -72,7 +70,6 @@ def signup():
 			session['username'] = data['username']
 			#redirect them
 			return redirect('/')
-
 
 @app.route("/history")
 @loggedIn

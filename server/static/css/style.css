@@ -1,5 +1,4 @@
-#placeholder
-{
+#placeholder{
 	width: 800px;
 	height: 450px;
 	margin:  5px auto;
@@ -29,6 +28,10 @@
 	color: black;
 }
 
+#userLabel{
+	margin-top: 10px;
+}
+
 #weightInput{
 	color: black;
 }
@@ -46,10 +49,11 @@
 	padding: 10px;
 	text-align: left;
 }
+
 #loginBox input{
 	color:black;
 }
 
-#signupError, #loginError{
+#errorBox{
 	display: none;
 }

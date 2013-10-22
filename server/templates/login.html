@@ -29,11 +29,13 @@
 					<button id="logInButton" type="submit" class="btn btn-primary">Log In</button>
 					<button id="signUpButton" class="btn">Sign Up</button>
 				</form>
-				{% if error == 'username' %}
-					<div class="alert alert-error">That username doesn't exist</div>
-				{% elif error == 'password' %}
-					<div class="alert alert-error">Incorrect password</div>
-				{% endif %}
+				<div id="errorBox" class="alert alert-error">
+					{% if error == 'username' %}
+						That username doesn't exist
+					{% elif error == 'password' %}
+						Incorrect password
+					{% endif %}
+				</div>
 			</div>
 		</div>
 	</div>

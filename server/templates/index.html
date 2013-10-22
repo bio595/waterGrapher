@@ -29,11 +29,14 @@
     <body>
         <div class="container">
             <div class="row">
-                <h1>Water Grapher <i class="icon-bar-chart"></i></h1> </div>
+                <h1>Water Grapher <i class="icon-bar-chart"></i></h1>
+            </div>
             <ul class="nav nav-tabs">
 			  <li class="active"><a href="#home" id="todayTab" data-toggle="tab">Today</a></li>
 			  <li><a href="#profile" data-toggle="tab" id="historyTab">History</a></li>
-			 <li class="pull-right"><a href="#signOut" data-toggle="tab" id="signOutTab" >Sign Out</a></li>
+              
+			  <li class="pull-right"><a href="#signOut" data-toggle="tab" id="signOutTab">Sign Out</a></li>
+              <li class="pull-right" id="userLabel">{{ user }}</li>
             </ul>
 
 			<div class="tab-content">

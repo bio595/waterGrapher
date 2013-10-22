@@ -2,23 +2,26 @@ import os
 
 from flask import Flask, flash, render_template, request, abort, redirect, url_for, session, make_response
 from models import User, db, Day, Consumption
+from functools import wraps
 import json
 from server import app
 from datetime import date, datetime
 
 def loggedIn(f):
+	@wraps(f)
 	def new_f():
+		print "Heyo"
 		if 'user' not in session:
 			return redirect('/login')
 		else:
 			return f()
-	
 	return new_f
 
-@loggedIn
+
 @app.route("/")
+@loggedIn
 def index():
-	return render_template('index.html')
+	return render_template('index.html', user=session['user'])
 
 @app.route("/login", methods=['GET', 'POST'])
 def login():
@@ -35,7 +38,7 @@ def login():
 			else:
 				passIsCorrect = User.query.filter(User.username == data['username'], User.password == data['password']).count()
 				if(passIsCorrect):
-					session['username'] = data['username']
+					session['user'] = data['username']
 					return redirect('/')
 				else:
 					return render_template('login.html', error='password')
@@ -65,10 +68,14 @@ def signup():
 			#create the user
 			db.add(User(data['username'], data['password']))
 			db.commit()
-			return json.dumps(data)
+			#create a session for the user
+			session['user'] = data['username']
+			#redirect them
+			return redirect('/')
 
-@loggedIn
+
 @app.route("/history")
+@loggedIn
 def history():
 	'''Returns a list of days with consumption details'''
 	#Retrieve the User that is logged in.
@@ -78,8 +85,9 @@ def history():
 		days.append(json.loads(day.serialize()))
 	return json.dumps(days)
 
-@loggedIn
+
 @app.route("/today")
+@loggedIn
 def today():
 	'''Return a list of consumption details for the current day'''
 	#Retrieve the User that is logged in.
@@ -94,8 +102,9 @@ def today():
 	else:
 		return query.first().serialize() 
 
-@loggedIn
+
 @app.route("/history/<int:year>-<int:month>-<int:day>")
+@loggedIn
 def volumeForDay(year, month, day):
 	'''Return a list of consumption details for the specified day'''
 	#Retrieve the User that is logged in.

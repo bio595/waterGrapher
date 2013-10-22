@@ -11,7 +11,7 @@ def loggedIn(f):
 	@wraps(f)
 	def new_f():
 		print "Heyo"
-		if 'user' not in session:
+		if 'username' not in session:
 			return redirect('/login')
 		else:
 			return f()
@@ -21,7 +21,7 @@ def loggedIn(f):
 @app.route("/")
 @loggedIn
 def index():
-	return render_template('index.html', user=session['user'])
+	return render_template('index.html', user=session['username'])
 
 @app.route("/login", methods=['GET', 'POST'])
 def login():
@@ -38,20 +38,20 @@ def login():
 			else:
 				passIsCorrect = User.query.filter(User.username == data['username'], User.password == data['password']).count()
 				if(passIsCorrect):
-					session['user'] = data['username']
+					session['username'] = data['username']
 					return redirect('/')
 				else:
 					return render_template('login.html', error='password')
 					
 		
 	else:
-		if 'user' in session:
+		if 'username' in session:
 			return redirect('/')
 		return render_template('login.html')
 
 @app.route("/logout", methods=['POST'])
 def logout():
-	del session['user']
+	del session['username']
 	return make_response('OK', 200)
 
 @app.route("/signup", methods=['POST'])
@@ -69,7 +69,7 @@ def signup():
 			db.add(User(data['username'], data['password']))
 			db.commit()
 			#create a session for the user
-			session['user'] = data['username']
+			session['username'] = data['username']
 			#redirect them
 			return redirect('/')
 

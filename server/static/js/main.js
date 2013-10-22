@@ -23,9 +23,11 @@ $(function () {
 		
 		//Get the data from the server
 		$.ajax({
-			url : "/test",
+			url : "/today",
 			success: function (responseData, textStatus, jqXHR){
 				
+				alert(responseData);
+
 				//Add it to the plot
 				var series = plot.getData();
 				
